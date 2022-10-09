@@ -1,0 +1,51 @@
+/* button css start */
+.btn-1{
+    font-family: $spartan;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $main-color;
+    padding: 18px 30px 16px 30px;
+    border: 2px solid $main-color;
+    @include d-flex;
+    &:hover{
+        background-color: $main-color;
+        .btn-arrow{
+            path{fill: #fff !important;}
+        }
+    }
+}
+.btn-arrow{
+    margin-left: 20px;
+    transition: .4s;
+    path{
+        transition: .4s;
+    }
+}
+.btn-2{
+    font-family: $spartan;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    padding: 18px 30px 16px 30px;
+    &:hover{
+        background-color: $main-color;
+        .btn-arrow{
+            path{fill: #fff !important;}
+        }
+    }
+}
+.btn-3{
+    font-family: $spartan;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #000;
+    background-color: #fff;
+    &:hover{
+        color: #000;
+        .btn-arrow{
+            transform: translateX(5px);
+        }
+    }
+}
+/* button css end */

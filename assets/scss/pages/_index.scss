@@ -1,0 +1,208 @@
+/* banner-section start */
+.banner-section{
+    position: relative;
+    background-image: url(/assets/images/banner-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: transparent linear-gradient(180deg, #212121 0%, rgba(0, 0, 0, 0) 100%) 0% 0% no-repeat padding-box;
+        z-index: 1;
+    }
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+}
+.banner-img-wrapper{
+    position: relative;
+    display: inline-block;
+    margin-left:50px;
+    padding-bottom: 45px;
+    &::after{
+        content: '';
+       position: absolute;
+       z-index: -1;
+    left: -50px;
+    bottom: -50px;
+    width: 100%;
+    height: 100%;
+    background-color: $main-color;
+    }
+}
+.banner-img-text {
+	position: absolute;
+	right: -58%;
+	top: 50%;
+	font-size: 24px;
+    color: $main-color;
+    font-weight: 600;
+    text-transform: uppercase;
+    transform: rotate(270deg);
+    letter-spacing: 10px;
+}
+.banner-title{
+    color: #fff;
+    font-size: 75px;
+    font-family: $syne;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.banner-subtitle{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+.banner-details{
+    color: #fff;
+    line-height: 1.7;
+    margin-bottom: 60px;
+}
+/* banner-section end */
+
+/* welcome-section start */
+.welcome-section{
+    position: relative;
+    padding-top: 320px;
+    margin-bottom: 70px;
+}
+.section-title-top{
+    color: $main-color;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: $roboto;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+    font-family: $syne;
+    margin-bottom: 25px;
+}
+.section-subtitle{
+    font-family: $roboto;
+    margin-bottom: 20px;
+    color: $p-color;
+}
+.contact-box{
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.contact-icon{
+    width: 20%;
+padding:20px 30px;display: flex;align-items: center;justify-content: center;
+background-color: $main-color;
+}
+.contact-content{
+    width: 80%;
+    background-color: #fff2e5;
+    padding:20px 30px;
+}
+.contact-content-title{
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.contact-content-details{
+    font-size: 26px;
+    font-weight: 800;
+    color: #000;
+    font-family: $roboto;
+    &:hover{
+        color: $main-color;
+    }
+}
+.welcome-img-wrapper {
+    position: relative;
+	display: flex;
+	justify-content: end;
+}
+.welcome-img-area{
+    position: relative;
+}
+.welcome-img{
+    position: relative;
+    top: -200px;
+    z-index: 1;
+    &::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-image: url(/assets/images/dot-shape.png);
+    }
+}
+.welcome-shape{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.dot-shape-wrapper{
+    position: relative;
+}
+.dot-shape-1 {
+	position: absolute !important;
+	max-width: 100%;
+	left: -80px;
+	top: unset !important;
+	bottom: 90px;
+	z-index: -1;
+}
+.dot-shape-2 {
+	position: absolute;
+	max-width: 100%;
+	top: -260px;
+	right: -65px;
+	z-index: -1;
+}
+.play-btn-wrapper{
+    position: absolute;
+    bottom: 6%;
+    left: 35%;
+    display: flex;
+    align-items: center;
+}
+.play-btn{
+    position: relative;
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    background-color: #fff;
+    @include d-flex;
+    &::before{
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        width: 115px;
+        height: 115px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+    }
+    &:hover{
+        i{
+            color: #000;
+        }
+    }
+    i{
+        color: $main-color;
+        font-size: 30px;transition: .4s;
+    }
+}
+
+.play-btn-text{
+    color: #fff;
+    font-size: 18px;
+    font-family: $roboto;
+    margin-left: 40px;
+}
+/* welcome-section end*/

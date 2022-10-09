@@ -1,0 +1,38 @@
+/* header-section css start */
+.header-section{
+    background-color: transparent;
+    position: absolute;
+width: 100%;
+left: 0;
+top: 0;
+z-index: 999;
+}
+.logo-wrapper {
+	max-width: 145px;
+}
+.navigation-bar{
+    margin-left: 120px;
+}
+.navbar-nav{
+    margin: 0 60px;
+}
+.navbar{
+    padding: 30px;
+}
+.nav-link{
+    font-family: $spartan;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #fff;
+    &:hover,&:focus{
+        color: $main-color;
+    }
+}
+.nav-item{
+    padding: 0 15px;
+}
+.navbar-collapse {
+	justify-content: space-between;
+}
+/* header-section css end */
