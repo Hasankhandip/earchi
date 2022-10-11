@@ -19,3 +19,11 @@ var swiper = new Swiper(".mySwiper", {
 });
 // wow js
 new WOW().init();
+// header-section js start
+$(window).on("scroll", function(){
+  if ($(this).scrollTop() > 250 ) {
+    $(".header-section").addClass("active");
+  } else {
+    $(".header-section").removeClass("active");
+  }
+});

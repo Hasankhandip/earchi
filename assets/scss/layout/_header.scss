@@ -2,10 +2,18 @@
 .header-section{
     background-color: transparent;
     position: absolute;
-width: 100%;
-left: 0;
-top: 0;
-z-index: 999;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 999;
+    &.active{
+        background-color: $main-bg;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        transition:all ease .3s;
+    }
 }
 .logo-wrapper {
 	max-width: 145px;
